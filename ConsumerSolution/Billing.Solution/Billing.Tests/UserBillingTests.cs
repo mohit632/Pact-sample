@@ -1,8 +1,6 @@
-using System;
 using System.Collections.Generic;
 using Billing.Tests.MockService;
 using BillingAPI.Client.Implementation;
-using PactNet.Matchers;
 using PactNet.Mocks.MockHttpService;
 using PactNet.Mocks.MockHttpService.Models;
 using Xunit;

@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Newtonsoft.Json;
 using PactNet;
 using PactNet.Mocks.MockHttpService;
-using PactNet.Models;
 
 namespace Billing.Tests.MockService
 {
