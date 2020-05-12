@@ -1,0 +1,61 @@
+{
+  "consumer": {
+    "name": "Billing"
+  },
+  "provider": {
+    "name": "UserAPI"
+  },
+  "interactions": [
+    {
+      "description": "A GET request to retrieve the user",
+      "providerState": "There is a user with id 1 and first name Chandan",
+      "request": {
+        "method": "get",
+        "path": "/api/user/1",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": 1,
+          "userFirstName": "Chandan",
+          "userLastName": "Vasishta",
+          "userAddress": "Mohali"
+        }
+      }
+    },
+    {
+      "description": "A GET request to retrieve the user",
+      "providerState": "There is a user with id '1' and first name 'Chandan'",
+      "request": {
+        "method": "get",
+        "path": "/api/user/1",
+        "headers": {
+          "Accept": "application/json"
+        }
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json; charset=utf-8"
+        },
+        "body": {
+          "id": 1,
+          "userFirstName": "Chandan",
+          "userLastName": "Vasishta",
+          "userAddress": "Mohali"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecification": {
+      "version": "1.0.0"
+    }
+  }
+}
